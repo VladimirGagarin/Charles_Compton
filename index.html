@@ -6,7 +6,7 @@
     <meta property="og:title" content="Charles Kihuyu">
     <meta property="og:description" content="This Is Charles Homepage">
     <meta property="og:image" content="https://logos.flamingtext.com/Name-Logos/Charles-design-fluffy-name.png">
-    <meta property="og:url" content="https://vladimirgagarin.github.io/Charles_Compton/"> 
+    <meta property="og:url" content="https://vladimirgagarin.github.io/Charles_Compton/">
     <meta property="og:type" content="website">
         
     <!-- Twitter Meta Tags -->
@@ -17,7 +17,9 @@
     
     <title>Charles Kihuyu</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="'/images/logo.jpg'," type="image/x-icon">
+    <link rel="apple-touch-icon" href="/images/logo.jpg">
+    <link rel="manifest" href="/manifest.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>    
@@ -34,7 +36,11 @@
             <ul>
                 <li><i class="fas fa-home"></i>Home</li>
                 <li><i class="fas fa-user"></i>About</li>
+                <li><i class="fas fa-download"></i>Install</li>
             </ul>
+            <div class="info-overlay">
+                <p id="overlay-text"></p>
+            </div>
         </div>
     </header>
 
@@ -163,7 +169,7 @@
            </div>
         </section>
 
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </main>
 </body>
 </html>
